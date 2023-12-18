@@ -21,9 +21,9 @@ gcc main.c functions.c -o "$BUILD_FOLDER/$EXECUTABLE_NAME" -Wall -Wextra -g
 
 # 3. Checking if compilation worked.
 if [ $? -eq 0 ]; then
+    echo "Launching $BUILD_FOLDER/$EXECUTABLE_NAME..."
     # 4. Launching the object file if everything worked.
     "./$BUILD_FOLDER/$EXECUTABLE_NAME"
-    # read -p "Type any key to exit."
 else
     # 5. If the compilation failed, inform the user.
     read -p "Compilation failed. Type any key to exit."
