@@ -10,7 +10,7 @@
 
 void printMyText();
 
-int mapFileInData(const char inputFile[], char** dataToMap, int* fileToOpen, struct stat* statsOfFile);
+int mapFileInData(const char inputFile[], void** dataToMap, int* fileToOpen, struct stat* statsOfFile);
 int unmapData(char* mappedData, int* fileToClose, struct stat* statsOfFile);
 
 #endif /* functions_h */

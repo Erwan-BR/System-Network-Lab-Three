@@ -10,7 +10,7 @@ void printMyText()
 /// @param dataToMap pointer to the data to map.
 /// @param fileToOpen Pointer to an int, used to retrieve the value (the file has to be close later)
 /// @return EXIT_SUCESS if everything work fine, EXIT_FAILURE either.
-int mapFileInData(const char inputFile[], char** dataToMap, int* fileToOpen, struct stat* statsOfFile)
+int mapFileInData(const char inputFile[], void** dataToMap, int* fileToOpen, struct stat* statsOfFile)
 {
     // 1. Open the file
     *fileToOpen = open(inputFile, O_RDWR);
