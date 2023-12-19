@@ -5,5 +5,6 @@
 #include <stdlib.h>
 
 #include "./functions.h"
+#include "./tosfs.h"
 
 #endif /* main_h */
