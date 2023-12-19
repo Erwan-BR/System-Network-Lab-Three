@@ -17,7 +17,7 @@ else
 fi
 
 # 2. Compiling main.cpp and every cpp file found by find into the build folder
-gcc main.c functions.c -o "$BUILD_FOLDER/$EXECUTABLE_NAME" -Wall -Wextra -g
+gcc main.c functions.c -o "$BUILD_FOLDER/$EXECUTABLE_NAME" -Wall -Wextra -g `pkg-config fuse --cflags --libs`
 
 # 3. Checking if compilation worked.
 if [ $? -eq 0 ]; then
