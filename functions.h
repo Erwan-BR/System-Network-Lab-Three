@@ -12,6 +12,8 @@
 
 #include "./hello_llc.h"
 
+typedef struct tosfs_superblock superBlock;
+
 void printMyText();
 
 int mapFileInData(const char inputFile[], void** dataToMap, int* fileToOpen, struct stat* statsOfFile);

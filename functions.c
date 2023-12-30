@@ -65,6 +65,8 @@ int unmapData(char* mappedData, int* fileToClose, struct stat* statsOfFile)
     return returnValue;
 }
 
+/// @brief Function used to mount the file system.
+/// @return 1 if an error occured, either 0.
 int mountFileSystem(int argc, char* argv[])
 {
     struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
@@ -94,3 +96,11 @@ int mountFileSystem(int argc, char* argv[])
 
     return err ? 1 : 0;
 }
+
+// int getTableOfInode(void** mappedData, struct tosfs_inode* tableOfInode)
+// {
+//     struct tosfs_superblock* myStructure = *mappedData;
+//     tableOfInode = (struct tosfs_inode*) (&myStructure + 1);
+
+//     return EXIT_SUCCESS;
+// }

@@ -1,10 +1,12 @@
 #include "./main.h"
 
+void** dataToMap;
+
 int main()
 {
     const char inputFile[] = "test_tosfs_files";
     int* fileToOpen = malloc(sizeof(int));
-    void** dataToMap = malloc(sizeof(void*));
+    dataToMap = malloc(sizeof(void*));
     struct stat* fileStats = malloc(sizeof(struct stat));
 
     int returnValueFromMapping = mapFileInData(inputFile, dataToMap, fileToOpen, fileStats);

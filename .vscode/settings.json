@@ -7,5 +7,6 @@
         "*.tcc": "c",
         "fuse_opt.h": "c",
         "fuse_lowlevel.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
